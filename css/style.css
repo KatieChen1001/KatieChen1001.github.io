@@ -14,6 +14,16 @@ color:
 
  */
 
+/* Under Construction Style */
+.under_construction{
+  font-family: "Abril Fatface";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5vw;
+  color: grey;
+  padding-top: 250px;
+}
+
 @font-face {
   /* specify priority fonts and fallback fonts */
   font-family: "Abril Fatface";
@@ -21,7 +31,9 @@ color:
 
 body {
   /* background-color: #e5e5e5; /* debug */ */
+  font-family: "Roboto"
 }
+
 
 .container {
   max-width: 680px;
@@ -80,11 +92,7 @@ span.logo_title {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items:flex-start;
-  align-content: flex-start;
-
-  padding: 0px 30px;
+  justify-content: center;
 }
 
 .thumbnail_container {
@@ -92,9 +100,17 @@ span.logo_title {
 }
 
 .thumbnail_img {
-  max-width: 300px;
-  width:300px;
+  max-width: 600px;
+  /* opacity: 1;  */
+  /* -webkit-transition: .3s ease-in-out; */
+	/* transition: .3s ease-in-out; */
 }
+
+
+/* img.thumbnail_img:hover {
+	opacity: 0.5;
+} */
+
 
 /* Responsive Design */
 /* Extra small devices (phones, 600px and down) */
@@ -120,88 +136,3 @@ span.logo_title {
 @media only screen and (min-width: 1200px) {
 }
 /*
-.mdl-layout__content {
-}
-
-.mdl-layout__header {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.mdl-layout__header-row .mdl-navigation__link {
-  color: black;
-}
-
-.mdl-layout-title {
-  color: black;
-}
-.mdl-layout__drawer-button {
-  color: black;
-}
-
-.full-page {
-  display: block;
-  margin: auto;
-  width: 80%;
-  margin-top: 2em;
-  color: black;
-}
-
-.full-page p {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  font-family: "Montserrat", sans-serif;
-}
-
-.mdl-grid {
-  max-width: 800px;
-}
-
-.mdl-cell.mdl-cell--8-col {
-  display: block;
-  margin: auto;
-}
-
-.grid-title {
-  text-decoration: underline;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: black;
-}
-
-.grid-title:hover {
-  cursor: pointer;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  transition: background-color 1s, color 1s, text-decoration 1s;
-}
-
-.grid-img {
-  filter: grayscale(1);
-}
-
-.grid-img:hover {
-  filter: grayscale(0);
-  transition: filter 1s;
-}
-
-.grid-title:hover,
-.grid-img:hover {
-  cursor: pointer;
-}
-
-.video-wrap {
-  position: relative;
-  padding-bottom: 53.25%;
-  padding-top: 25px;
-  height: 0;
-}
-
-.video-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
